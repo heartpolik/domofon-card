@@ -2,7 +2,7 @@
  * Domofon Card — Lovelace card for the Smart Domofon integration
  * https://github.com/heartpolik/domofon-card  (MIT)
  */
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 
 const I18N = {
   uk: {
@@ -19,7 +19,7 @@ const I18N = {
     empty: "Дзвінків ще не було",
     modes: ["Звичайний", "Один раз", "Завжди відчиняти", "Завжди скидати"],
     outcome: { ringing: "дзвонить", opened: "відчинено", rejected: "скинуто", missed: "пропущено" },
-    via: { auto: "авто", phone: "з телефону", manual: "вручну" },
+    via: { auto: "авто", phone: "з телефону", telegram: "з Telegram", manual: "вручну" },
     noEntity: "Не знайдено сенсор інтеграції Smart Domofon. Вкажіть entity: sensor.…_calls_today",
     unavailable: "Домофон недоступний",
   },
@@ -37,7 +37,7 @@ const I18N = {
     empty: "No calls yet",
     modes: ["Normal", "Open once", "Always open", "Always reject"],
     outcome: { ringing: "ringing", opened: "opened", rejected: "rejected", missed: "missed" },
-    via: { auto: "auto", phone: "phone", manual: "manual" },
+    via: { auto: "auto", phone: "phone", telegram: "Telegram", manual: "manual" },
     noEntity: "Smart Domofon sensor not found. Set entity: sensor.…_calls_today",
     unavailable: "Intercom unavailable",
   },
